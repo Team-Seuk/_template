@@ -1,6 +1,6 @@
 """앱 진입점 — FastAPI 인스턴스를 만들고 라우터를 끼운다.
 
-실행: uv run fastapi dev src/app/main.py   (→ http://127.0.0.1:8000/docs)
+실행: uv run fastapi dev app/main.py   (→ http://127.0.0.1:8000/docs)
 create_app() 팩토리 형태라 테스트에서 깨끗한 앱 인스턴스를 새로 만들 수 있다.
 """
 

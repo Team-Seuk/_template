@@ -19,4 +19,4 @@ if (-not (Test-Path ".env")) {
 Write-Host "4/4  테스트로 환경 확인 ..." -ForegroundColor Cyan
 uv run pytest -q
 
-Write-Host "`n완료! 앱 실행:  uv run fastapi dev src/app/main.py  ->  http://127.0.0.1:8000/docs" -ForegroundColor Green
+Write-Host "`n완료! 앱 실행:  uv run fastapi dev app/main.py  ->  http://127.0.0.1:8000/docs" -ForegroundColor Green
