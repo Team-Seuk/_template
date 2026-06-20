@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- 가상환경 (각자 머신에서 uv sync 로 생성) ---
+.venv/
+
+# --- 도구 캐시 ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.import_linter_cache/
+
+# --- 비밀/로컬 설정 (절대 커밋 금지) ---
+.env
+
+# --- IDE ---
+.idea/
+.vscode/
+
+# ⚠️ uv.lock 은 무시하지 않는다 — 커밋해야 5명이 동일 버전을 받는다.
+# ⚠️ .python-version 도 무시하지 않는다 — 인터프리터 버전을 팀 전체가 고정.
