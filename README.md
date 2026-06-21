@@ -13,11 +13,8 @@ GitHub **"Use this template"** 로 새 레포를 찍어 쓰면, 5명 모두 *항
 
 ```powershell
 uv sync                          # 의존성 설치(.venv 자동 생성, 모두 동일 버전)
-Copy-Item .env.example .env      # 로컬 설정 파일
-uv run pre-commit install        # 커밋할 때 자동 포맷·검사
 uv run pytest                    # 환경 확인 — 다 통과하면 준비 끝
 ```
-한 방에: `powershell -ExecutionPolicy Bypass -File scripts/setup.ps1`
 
 > uv 가 없으면(머신당 1회): `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"` 후 **새 터미널**을 연다.
 
@@ -74,4 +71,4 @@ tests/                 app 미러링(unit / api)
 
 > ⚠️ `pip install` · `python -m venv` 금지. 잠금(uv.lock)을 우회해 팀원 환경이 갈라진다. 항상 `uv add/sync/run`.
 
-협업 규칙(브랜치·PR)은 [CONTRIBUTING.md](CONTRIBUTING.md).
+협업 흐름(브랜치·PR)은 [TUTORIAL.md](TUTORIAL.md) 7장 참고.

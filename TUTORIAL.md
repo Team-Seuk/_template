@@ -118,7 +118,7 @@ routers.py (요청 받음)
 ⑤ main에 머지 → 반복
 ```
 
-이 폴더 구조 덕에 각자 다른 폴더를 맡으면(누구는 adapters, 누구는 domain) 같은 파일을 거의 안 건드려서 충돌이 적다. (브랜치·커밋 규칙은 CONTRIBUTING.md)
+이 폴더 구조 덕에 각자 다른 폴더를 맡으면(누구는 adapters, 누구는 domain) 같은 파일을 거의 안 건드려서 충돌이 적다. (브랜치 이름은 `feat/이름-기능`, 커밋은 `feat: 설명` 식으로)
 
 ---
 
@@ -126,7 +126,7 @@ routers.py (요청 받음)
 
 | 하고 싶은 것 | 명령 |
 |---|---|
-| 처음 세팅 | `uv sync` → `Copy-Item .env.example .env` → `uv run pre-commit install` |
+| 처음 세팅 | `uv sync` → `uv run pytest` |
 | 앱 실행 | `uv run fastapi dev app/main.py` (→ `/docs`) |
 | 테스트 | `uv run pytest` |
 | 포맷·린트 | `uv run ruff format .` / `uv run ruff check .` |
